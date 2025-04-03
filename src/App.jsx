@@ -76,8 +76,8 @@ export default function AssemblyEndgame() {
             <section className="keyboard">{keyboardElements}</section>
             {(lost||won) && <button className="play-again" onClick={() => { puzzle.init(); setGuesses([...puzzle.guesses]); setCurrentGuess(puzzle.currentGuess), setWon(puzzle.won),setLost(puzzle.lost) }}>Play Again</button>}
 
-            <p>Word: {puzzle.word}</p>
-            <p>Guesses: {JSON.stringify(guesses)}</p>
+            {/* <p>Word: {puzzle.word}</p>
+            <p>Guesses: {JSON.stringify(guesses)}</p> */}
             
         </main>
     );
