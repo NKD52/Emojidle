@@ -63,10 +63,13 @@ span.letter-chips {
   height: 50px;
   width: 50px;
   background-color: #323232;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.125rem;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  font-weight: 700;
   border-bottom: 1px solid #F9F4DA;
   text-align: center;
   transition: background-color 0.3s ease;
