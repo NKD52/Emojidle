@@ -1,55 +1,54 @@
 export const words3 = [
-    { word: "Fireman", emoji: ["🔥", "👨‍🚒", "🚒"] },
-    { word: "Sailing", emoji: ["⛵", "🌊", "🌬️"] },
-    { word: "Teacher", emoji: ["👨‍🏫", "📚", "✏️"] },
-    { word: "Airport", emoji: ["✈️", "🏢", "🛄"] },
-    { word: "Coconut", emoji: ["🥥", "🌴", "🏝️"] },
-    { word: "Pumpkin", emoji: ["🎃", "🌱", "🍂"] },
-    { word: "Swimmer", emoji: ["🏊‍♂️", "💦", "🏅"] },
-    { word: "Holiday", emoji: ["🎄", "🏝️", "🎁"] },
-    { word: "Factory", emoji: ["🏭", "⚙️", "🔧"] },
-    { word: "amazing", emoji: ["✨", "🤩", "🔥"] },
-    { word: "success", emoji: ["🏆", "🚀", "🎯", "💯"] },
-    { word: "journey", emoji: ["🧭", "🌄", "👣", "🛤️", "✈️"] },
-    { word: "pockets", emoji: ["👖", "🪙", "🕳️", "🤲"] },
-    { word: "library", emoji: ["📚", "🦉", "🏛️"] },
-    { word: "picture", emoji: ["📷", "🎨"] },
-    { word: "forever", emoji: ["♾️", "💍", "⏳"] },
-    { word: "wintery", emoji: ["❄️", "☕"] },
-    { word: "freedom", emoji: ["🗽", "🏃", "🔓"] },
-    { word: "society", emoji: ["👥", "🏙️", "🌐", "💬"] },
-    { word: "imagine", emoji: ["🔮", "💭", "🌠"] },
-    { word: "balance", emoji: ["🧘", "☯️"] },
-    { word: "mystery", emoji: ["🔎", "❓", "👻"] },
-    { word: "reality", emoji: ["📡", "👁️", "🌍", "🪞", "⚡"] },
-    { word: "captain", emoji: ["👨‍✈️", "⚓"] },
-    { word: "sunrise", emoji: ["🌅", "☀️", "🌤️", "🌄"] },
-    { word: "diamond", emoji: ["💎"] },
-    { word: "harvest", emoji: ["🌾", "🚜", "🍎", "🍂", "🛒"] },
-    { word: "bicycle", emoji: ["🚲", "🛣️"] },
-    { word: "monster", emoji: ["👹", "🌑", "💀", "👻"] },
-    { word: "paradox", emoji: ["🤯", "🔄"] },
-    { word: "silence", emoji: ["🤫", "🔇", "🌌"] },
-    { word: "victory", emoji: ["🏆", "🎖️", "✌️"] },
-    { word: "whisper", emoji: ["👂", "🏛️"] },
-    { word: "miracle", emoji: ["🌟", "🙌", "✨"] },
-    { word: "tornado", emoji: ["🌪️", "🏠", "💨"] },
-    { word: "unicorn", emoji: ["🦄", "🌈"] },
-    { word: "volcano", emoji: ["🌋", "🔥"] },
-    { word: "quantum", emoji: ["🔬", "⚛️"] },
-    { word: "Jubilee", emoji: ["🎉", "🥳", "🎶"] },
-    { word: "Rescue", emoji: ["🛟", "🚒", "💪"] },
-    { word: "Lenders", emoji: ["💵", "📈", "🏦"] },
-    { word: "Chasing", emoji: ["🏃", "🐾", "⏳"] },
-    { word: "Survive", emoji: ["🏕️", "🔥", "💪"] },
-    { word: "Breathe", emoji: ["💨", "🌬️", "🌳"] },
-    { word: "Frozen", emoji: ["❄️", "☃️", "🧊"] },
-    { word: "Wander", emoji: ["🛤️", "👣", "🌍"] },
-    { word: "Tropics", emoji: ["🌴", "🏖️", "🌞"] },
-    { word: "Sunbeam", emoji: ["🌞", "🌟", "✨"] },
-    { word: "Fighter", emoji: ["🥊", "💥", "👊"] },
-    { word: "Catcher", emoji: ["🥎", "🧤", "⚾"] },
-    { word: "Bravery", emoji: ["🦸‍♂️", "🔥", "💪"] },
-    { word: "Wishing", emoji: ["🌠", "🎉", "🍀"] },
-    { word: "Lending", emoji: ["💵", "💳", "🏦"] },
+    { word: "Fireman", emoji: ["🔥", "👨"] }, // Fire + Man
+    { word: "Sailing", emoji: ["⛵", "📞"] }, // Sail + Ing (Salt + Ring)
+    { word: "Teacher", emoji: ["🍵", "🔑", "👂"] }, // Tea + Key + Ear
+    { word: "Airport", emoji: ["💨", "🏗"] }, // Air + Port (Apple + Door)
+    { word: "Coconut", emoji: ["🫘", "🍫", "🥜"] }, // Cocoa + Nut
+    { word: "Pumpkin", emoji: ["✊", "👑"] }, // Pump + Kin
+    { word: "Swimmer", emoji: ["🌊", "👨"] }, // Swim + Mer (Man)
+    { word: "Holiday", emoji: ["🎅", "💡", "📅"] }, // Ho + Light + Day
+    { word: "Factory", emoji: ["📠", "💧", "🔢"] }, // Fax + Torr + Y
+    { word: "Amazing", emoji: ["₪", "💲"] }, // A + Maze + Ing
+    { word: "Success", emoji: ["☀️", "💰"] }, // Suck + Cents
+    { word: "Journey", emoji: ["🧃", "👃", "🔑"] }, // Juice + Nose + Key
+    { word: "Pockets", emoji: ["🎩", "🪙"] }, // Pock + Cents
+    { word: "Library", emoji: ["📖", "🔊"] }, // Lib + Rary (Read)
+    { word: "Picture", emoji: ["🖼️", "📷"] }, // Pic + Ture
+    { word: "Forever", emoji: ["4️⃣", "⛵", "🔁"] }, // Four + Eve + R
+    { word: "Wintery", emoji: ["❄️", "💨"] }, // Win + Tear + Y
+    { word: "Freedom", emoji: ["🍟", "🦷"] }, // Free + Dumb
+    { word: "Society", emoji: ["🔧", "👀", "🍵"] }, // Socket + Eye + Tea
+    { word: "Imagine", emoji: ["🍦", "💭", "🎵"] }, // I + Mag + In
+    { word: "Balance", emoji: ["⚖️", "🐜"] }, // Bal + Ants
+    { word: "Mystery", emoji: ["💁🏻‍♀️", "🥲"] }, // Mist + Tea + Re
+    { word: "Reality", emoji: ["📺", "🍵"] }, // Re + Al + Key
+    { word: "Captain", emoji: ["🧢", "🔟"] }, // Cap + Ten
+    { word: "Sunrise", emoji: ["☀️", "📈"] }, // Sun + Rise
+    { word: "Diamond", emoji: ["💎", "📅", "🐝"] }, // Die + Monday
+    { word: "Harvest", emoji: ["🌾", "🦅"] }, // Harp + Vest
+    { word: "Bicycle", emoji: ["🐝", "🔁"] }, // Bi + Cycle
+    { word: "Monster", emoji: ["📦", "🌀"] }, // Mon + Stir
+    { word: "Paradox", emoji: ["🥭", "🦆", "🔄"] }, // Pair + A + Ducks
+    { word: "Silence", emoji: ["🤫"] }, // Silent + C
+    { word: "Victory", emoji: ["✌️", "🌲"] }, // V + Tree
+    { word: "Whisper", emoji: ["🌬️", "👂"] }, // Whis + Per
+    { word: "Miracle", emoji: ["🪞", "🔮"] }, // Mirror + A + Call
+    { word: "Tornado", emoji: ["🌪️", "🚪"] }, // Torn + A + Door
+    { word: "Unicorn", emoji: ["1️⃣", "🌽"] }, // Uni + Corn
+    { word: "Volcano", emoji: ["🏐", "🗑️", "❌"] }, // Violin + Nose + No
+    { word: "Quantum", emoji: ["🎸", "🍏", "🔢"] }, // Quan + Tum
+    { word: "Jubilee", emoji: ["🎷", "🐝", "📜"] }, // Ju + Bee + Lee
+    { word: "Lenders", emoji: ["👂", "💵"] }, // Lend + Ers
+    { word: "Chasing", emoji: ["🏃", "🔔"] }, // Chase + Sing
+    { word: "Survive", emoji: ["🌊", "🔟"] }, // Surf + Five
+    { word: "Tropics", emoji: ["🌴", "📸"] }, // Trop + Pics
+    { word: "Sunbeam", emoji: ["☀️", "💡"] }, // Sun + Beam
+    { word: "Fighter", emoji: ["🔥", "👊"] }, // Fight + Er
+    { word: "Catcher", emoji: ["🥎", "🖐","👨🏾‍🚒"] }, // Catch + Er
+    { word: "Wishing", emoji: ["🌠", "💭"] }, // Wish + Ing
+    { word: "Lending", emoji: ["🫳","🖋️","🫴", "💵"] }, // Lend + Ing
+    { word: "Rainbow", emoji: ["🌧️", "🐂"] }, // Rain + Bow
+    { word: "Popcorn", emoji: ["🍾", "🌽"] }, // Pop + Corn
+    { word: "Chasing", emoji: ["🏃", "🔔"] }, // Chase + Ing
+
 ];

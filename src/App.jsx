@@ -82,7 +82,7 @@ export default function AssemblyEndgame() {
             <footer>
                 <h1>{puzzle.lost ? `You lost, the word was ${puzzle.word}` : ""}</h1>
                 <h1>{puzzle.won ? "You Won, Champion!" : ""}</h1>
-
+                
             </footer>
             <section ref = {myRef} className="keyboard">{keyboardElements} </section>
             {(lost||won) && <button className="play-again" onClick={() => { puzzle.init(); setGuesses([...puzzle.guesses]); setCurrentGuess(puzzle.currentGuess), setWon(puzzle.won),setLost(puzzle.lost) }}>Play Again</button>}
