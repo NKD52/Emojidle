@@ -18,7 +18,7 @@ export const words3 = [
     { word: "Wintery", emoji: ["❄️", "💨"] }, // Win + Tear + Y
     { word: "Freedom", emoji: ["🍟", "🦷"] }, // Free + Dumb
     { word: "Society", emoji: ["🔧", "👀", "🍵"] }, // Socket + Eye + Tea
-    { word: "Imagine", emoji: ["🍦", "💭", "🎵"] }, // I + Mag + In
+    { word: "Imagine", emoji: ["🪞", "📥"] }, // I + Mag + In
     { word: "Balance", emoji: ["⚖️", "🐜"] }, // Bal + Ants
     { word: "Mystery", emoji: ["💁🏻‍♀️", "🥲"] }, // Mist + Tea + Re
     { word: "Reality", emoji: ["📺", "🍵"] }, // Re + Al + Key
