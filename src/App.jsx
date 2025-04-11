@@ -69,7 +69,7 @@ export default function AssemblyEndgame() {
             <header>
                 <h1>Emojidle</h1>
                 <p>Guess the word within 5 attempts!</p>
-                <p className="emoji">{    words3.find(item => item.word.toLowerCase() === puzzle.word.toLowerCase())?.emoji.join(" ") || "Word not found"
+                <p className="emoji">{    words3.find(item => item.word.toLowerCase() === puzzle.word.toLowerCase())?.emoji.join(" ") 
                 }</p>
             </header>
 
