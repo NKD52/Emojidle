@@ -22,15 +22,21 @@ export default function AssemblyEndgame() {
         }
     },[won])
    
-    function addGuessLetter(letter){
-        if (puzzle.guesses[puzzle.currentGuess].length < 7 && /^[A-Za-z]$/.test(letter)) {
-            puzzle.guesses[puzzle.currentGuess] += letter.toLowerCase();
-            setGuesses([...puzzle.guesses]);
+    function addGuessLetter(letter) {
+        if (letter === "⤷") {
+            puzzle.handleKeyup({ key: "Enter" });
+        } else if (letter === "⌫") {
+            puzzle.handleKeyup({ key: "Backspace" });
+        } else if (/^[A-Za-z]$/.test(letter)) {
+            puzzle.handleKeyup({ key: letter });
+        }
+    
+        setGuesses([...puzzle.guesses]);
         setCurrentGuess(puzzle.currentGuess);
         setLost(puzzle.lost);
-        setWon(puzzle.won)
-        }
+        setWon(puzzle.won);
     }
+    
 
     useEffect(() => {
         puzzle.init();
@@ -53,8 +59,8 @@ export default function AssemblyEndgame() {
     }, []);
 
 
-    const alphabet = "abcdefghijklmnopqrstuvwxyz";
-    const keyboardElements = alphabet.split("").map((letter) => (
+    const alphabet = "a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.⤷.u.v.w.x.y.z.⌫";
+    const keyboardElements = alphabet.split('.').map((letter) => (
         <button className="new-game" onClick = {()=>{addGuessLetter(letter)}} key={letter}>{letter.toUpperCase()}</button>
     ));
     return (
