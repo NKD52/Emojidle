@@ -1,13 +1,19 @@
 import { words2 } from "../word2";
 import { words3 } from "../words3";
 
+
+if (!sessionStorage.getItem("alreadyLoaded")) {
+    localStorage.removeItem("playedWords"); 
+    sessionStorage.setItem("alreadyLoaded", "true");
+}
+
 const puzzle = {
     word: "",
     guesses: ["", "", "", "", ""],
     currentGuess: 0,
     won: false,
     lost: false,
-
+    
     getPlayedWords() {
         return JSON.parse(localStorage.getItem("playedWords") || "[]");
     },
@@ -22,13 +28,16 @@ const puzzle = {
     },
 
     init() {
+     
         const played = this.getPlayedWords();
         const availableWords = words3.filter(item => !played.includes(item.word.toLowerCase()));
 
+
         if (availableWords.length === 0) {
             this.resetPlayedWords();
-            this.word = "emojidy"; // Fallback word
+            this.word = "emojidy"; 
             console.log("No more words left. Resetting progress.");
+            location.reload();
         } else {
             const randomIndex = Math.floor(Math.random() * availableWords.length);
             this.word = availableWords[randomIndex].word;
