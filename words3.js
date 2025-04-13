@@ -11,7 +11,7 @@ export const words3 = [
     { word: "Amazing", emoji: ["🅰️","₪", "🎤"] }, // A + Maze + Ing
     { word: "Journey", emoji: ["📖 🦵🏻"] }, // Juice + Nose + Key
     { word: "Pockets", emoji: ["👝 👝 ➕"] }, // Pock + Cents
-    { word: "Library", emoji: ["📚 🏛️"] }, // Lib + Rary (Read)
+    { word: "Library", emoji: ["♎︎︎ 🍓"] }, // Lib + Rary (Read)
     { word: "Picture", emoji: ["🖼️"] }, // Pic + Ture
     { word: "Forever", emoji: ["4️⃣ ♾️"] }, // Four + Eve + R
     { word: "Wintery", emoji: ["❄️", "💨"] }, // Win + Tear + Y

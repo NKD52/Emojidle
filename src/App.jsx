@@ -13,6 +13,7 @@ export default function AssemblyEndgame() {
     const [currentGuess, setCurrentGuess] = useState(puzzle.currentGuess);
     const [lost, setLost] = useState(puzzle.lost)
     const [won, setWon] = useState(puzzle.won)
+    const [message, setMessage] = useState("");
 
     const myRef = useRef(null)
     
@@ -23,7 +24,13 @@ export default function AssemblyEndgame() {
     },[won])
    
     function addGuessLetter(letter) {
-        if (letter === "⤷") {
+        setMessage("");
+
+        if (letter === "↪") {
+            if (puzzle.guesses[puzzle.currentGuess].length !== 7) {
+                setMessage("Not enough letters");
+                return;
+            }
             puzzle.handleKeyup({ key: "Enter" });
         } else if (letter === "⌫") {
             puzzle.handleKeyup({ key: "Backspace" });
@@ -44,6 +51,16 @@ export default function AssemblyEndgame() {
         setCurrentGuess(puzzle.currentGuess);
 
         const handleKeyupBound = (e) => {
+            setMessage(""); 
+          
+            if (e.key === "Enter" && puzzle.guesses[puzzle.currentGuess].length !== 7) {
+                if (e) {
+                    e.preventDefault();
+                    e.target.blur(); 
+                }
+                setMessage("Not enough letters");
+                return;
+            }
             puzzle.handleKeyup(e);
             setGuesses([...puzzle.guesses]); 
         
@@ -58,10 +75,9 @@ export default function AssemblyEndgame() {
         return () => window.removeEventListener("keyup", handleKeyupBound);
     }, []);
 
-
-    const alphabet = "a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.⤷.u.v.w.x.y.z.⌫";
+    const alphabet = "a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.u.v.w.x.y.z.↪.⌫";
     const keyboardElements = alphabet.split('.').map((letter) => (
-        <button className="new-game" onClick = {()=>{addGuessLetter(letter)}} key={letter}>{letter.toUpperCase()}</button>
+        <button disabled = {won||lost} className="new-game" onClick = {()=>{addGuessLetter(letter)}} key={letter}>{letter.toUpperCase()}</button>
     ));
     return (
         <main>
@@ -86,6 +102,7 @@ export default function AssemblyEndgame() {
             </section>
 
             <footer>
+            <h1>{message}</h1>
                 <h1>{puzzle.lost ? `You lost, the word was ${puzzle.word}` : ""}</h1>
                 <h1>{puzzle.won ? "You Won, Champion!" : ""}</h1>
                 
