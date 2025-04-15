@@ -3,10 +3,7 @@ import { clsx } from "clsx";
 import Confetti from "react-confetti";
 import Guess from "./Guess";
 import puzzle from "./puzzle";
-import { words2 } from "../word2";
 import { words3 } from "../words3";
-
-import { emojiList } from "../emoji";
 
 export default function AssemblyEndgame() {
     const [guesses, setGuesses] = useState([...puzzle.guesses]);
