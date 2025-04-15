@@ -1,12 +1,29 @@
-# React + Vite
+# Emojidle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Emojidle** – a fun and creative word guessing game where players try to figure out a word from a series of emojis. Think of it as a twist on the popular game Wordle, but with a visual twist! This project was built with passion and creativity to bring a fun, unique experience to all puzzle enthusiasts.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To play the game, simply click the link below to access it on GitHub Pages:
+[Play Emojidle Now!](https://nkd52.github.io/Emojidle/)
 
-## Expanding the ESLint configuration
+No installation is required – just open the game in your web browser and start guessing!
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contributing
+
+Contributions are welcome! If you'd like to improve the game or add new features, feel free to fork the repo, create a branch, and submit a pull request. Let’s make this game even more fun together!
+
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License – see the [LICENSE](LICENSE) file for details.
+
+You can freely share and remix the game for non-commercial purposes, as long as you provide proper attribution. For more details, visit [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+
+## Acknowledgments
+
+- **Inspired by**: The classic Wordle game, with a twist of emojis!
+- **Thanks to**: All the open-source communities and resources that helped me build this project. Special shout-out to everyone who shares their knowledge freely!
+
+---
+
+Have fun guessing the words with Emojidle! 😄🎉
