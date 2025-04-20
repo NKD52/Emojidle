@@ -64,7 +64,7 @@ export default function AssemblyEndgame() {
                 const newTitle = puzzle.getDailyWordBoolean() ? "Emojidle" : "Emojidle";
                 setTitle(newTitle);
             }
-        }, []);
+        }, [puzzle.lost||puzzle.won]);
 
         return <h1 className={`fade ${fade ? "fade-out" : ""}`} aria-label="Game Title">{title}</h1>;
     }
