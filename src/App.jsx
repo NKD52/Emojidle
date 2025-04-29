@@ -11,8 +11,11 @@ export default function AssemblyEndgame() {
     const [lost, setLost] = useState(puzzle.lost);
     const [won, setWon] = useState(puzzle.won);
     const [message, setMessage] = useState("");
-
+    const [sidebarVisible, setSidebarVisible ] = useState(false);
+     const [hint, setHint] = useState("");
+    const [hintVisible, setHintVisible] = useState(false);
     const myRef = useRef(null);
+    
 
     useEffect(() => {
         if (myRef.current) {
@@ -35,10 +38,38 @@ export default function AssemblyEndgame() {
             puzzle.handleKeyup({ key: letter });
         }
 
+        setGameState();
+    }
+
+    function setGameState() {
         setGuesses([...puzzle.guesses]);
         setCurrentGuess(puzzle.currentGuess);
         setLost(puzzle.lost);
         setWon(puzzle.won);
+    }
+
+    function getHintText(){
+        const emojiWord = words3.find(
+            (item) => item.word.toLowerCase() === puzzle.word.toLowerCase()
+        );
+        setHint(emojiWord.hint);
+        setHintVisible(true);
+        setTimeout(() => {
+            setHintVisible(false);
+        }, 5000);
+    }
+
+    function setHintVisibleBoolean(){
+        setHintVisible(!hintVisible);
+        getHintText();
+    }
+    
+
+    function setHintVisibleFalse(){
+        setHintVisible(false);
+    }
+    function showSidebar(){
+        setSidebarVisible(prevsidebar=>!prevsidebar);
     }
 
     function DailyTitle() {
@@ -47,23 +78,24 @@ export default function AssemblyEndgame() {
 
         useEffect(() => {
             const alreadyPlayed = puzzle.getDailyWordBoolean();
-
+            let timer1, timer2;
             if (!alreadyPlayed) {
-                const timer1 = setTimeout(() => setFade(true), 5000);
-                const timer2 = setTimeout(() => {
+                 timer1 = setTimeout(() => setFade(true), 5000);
+                timer2 = setTimeout(() => {
                     const newTitle = puzzle.getDailyWordBoolean() ? "Emojidle" : "Daily Word";
                     setTitle(newTitle);
                     setFade(false);
                 }, 5500);
 
-                return () => {
-                    clearTimeout(timer1);
-                    clearTimeout(timer2);
-                };
+                
             } else {
                 const newTitle = puzzle.getDailyWordBoolean() ? "Emojidle" : "Emojidle";
                 setTitle(newTitle);
             }
+            return () => {
+                clearTimeout(timer1);
+                clearTimeout(timer2);
+            };
         }, [puzzle.lost||puzzle.won]);
 
         return <h1 className={`fade ${fade ? "fade-out" : ""}`} aria-label="Game Title">{title}</h1>;
@@ -87,10 +119,7 @@ export default function AssemblyEndgame() {
             }
 
             puzzle.handleKeyup(e);
-            setGuesses([...puzzle.guesses]);
-            setCurrentGuess(puzzle.currentGuess);
-            setLost(puzzle.lost);
-            setWon(puzzle.won);
+            setGameState();
         };
 
         window.addEventListener("keyup", handleKeyupBound);
@@ -125,7 +154,51 @@ export default function AssemblyEndgame() {
             {puzzle.won && <Confetti recycle={false} numberOfPieces={1000} aria-hidden="true" />}
 
             <header role="banner">
-                <div className="headerH1">{DailyTitle()}</div>
+                <div className="headerH1">
+                    {DailyTitle()}
+                    <div className="nav-wrapper">
+                        <nav>
+
+                            {/* not nromal sidebar */}
+                            <ul className="sidebar" style={{display: sidebarVisible? 'flex':'none'}}>
+                            <li onClick={showSidebar} ><a href="#" title="close"><span className="material-icons-outlined">
+                                    close
+                                    </span></a></li> 
+                                <li onClick = {setHintVisibleBoolean}><a href="#" title="Hint"><span className="material-icons-outlined"  role="button"
+  tabIndex={0}>
+                                    lightbulb
+                                    </span></a></li>
+                                
+                                                          
+                            </ul>
+
+                            <ul className="notsidebar" style={{backgroundColor: sidebarVisible? 'transparent':'white'}}>
+                                <li onClick = {setHintVisibleBoolean}  className="hideOnMobile"><a href="#" title="Hint"><span className="material-icons-outlined">
+                                    lightbulb
+                                    </span></a></li>
+                                <li onClick={showSidebar} className="menu-button" ><a title="menu" href="#"><span className="material-icons-outlined"  role="button"
+  tabIndex={0}>
+                                    menu
+                                    </span></a>
+                                </li>
+                            </ul>
+                            <div className={`hintbox ${hintVisible ? "visible" : ""}`}>
+    <div className="hint-close">
+        <h3>Hint</h3>
+        <span onClick={setHintVisibleFalse} className="material-icons-outlined"  role="button"
+  tabIndex={0}>
+            cancel  
+        </span>
+    </div>
+    <p>{hint}</p>
+</div>
+                        </nav>
+
+                        
+                            
+                       
+                    </div>
+                </div>
                 <p className="header-desc">Guess the word within 5 attempts!</p>
                 <p className="emoji" aria-label={`Emoji clue: ${emojiWord?.emoji.join(" ")}`}>
                     {emojiWord?.emoji.join(" ")}

@@ -41,7 +41,6 @@ header > h1, header>div.headerH1>h1 {
 
 header > p.header-desc {
   font-size: 0.875rem;
-  max-width: 350px;
   color: #8E8E8E;
   margin: 0 0 15px 0;
 }
@@ -84,8 +83,8 @@ section.guess-comp{
 
 
 span.letter-chips {
-  height: 50px;
-  width: 50px;
+  height: 53px;
+  width: 53px;
   background-color: #323232;
   color: white;
   display: flex;
@@ -97,6 +96,7 @@ span.letter-chips {
   border-bottom: 1px solid #ffffff;
   text-align: center;
   transition: background-color 0.3s ease;
+  z-index: -1;
 }
 
 span.animated {
@@ -128,12 +128,12 @@ section.keyboard {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 section.keyboard > button {
-  height: 35px;
-  width: 35px;
+  height: 37px;
+  width: 39px;
   background-color: #FCBA29;
   border: 1px solid #D7D7D7;
   border-radius: 3px;
@@ -177,7 +177,6 @@ button.play-again {
   border: 0;
 }
 
-/* Add these to index.css */
 @media (max-width: 600px) {
   body {
     padding: 10px;
@@ -202,14 +201,422 @@ button.play-again {
     margin-bottom: 20px;
   }
 
-  button.new-game {
+  button.play-game {
     width: 100%;
     max-width: 300px;
   }
 }
 
-@media (min-height:1000px) {
-  main{
-    row-gap: 40px;
+@media (min-width: 750px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1366px) {
+  main {
+    row-gap: 50px;
   }
+
+  header > h1, header > div.headerH1 > h1 {
+    font-size: 2.5rem;
+  }
+
+  header > p.header-desc {
+    font-size: 1rem;
+  }
+
+  header > p.emoji {
+    font-size: 2.2rem;
+    width: 220px;
+  }
+
+  section.guess-comp{
+    gap: 15px;
+  }
+
+  span.letter-chips {
+    height: 65px;
+    width: 65px;
+    font-size: 1.6rem;
+  }
+
+  section.keyboard {
+    max-width: 560px;
+    gap: 12px;
+  }
+  section.keyboard > button {
+    height: 59px;
+    width: 56px;
+    font-size: 1.1rem;
+  }
+
+  button.play-again {
+    width: 250px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+  .hintbox p {
+    
+    font-size: 18px;
+   
+  }
+
+  .hintbox h3{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media (min-width: 1366px) and (min-height: 768px) {
+ 
+  header > h1, header>div.headerH1>h1 {
+    font-size: 2.65rem;
+    
+  }
+  
+  section.guess-comp{
+   
+    gap: 11px;
+   
+  }
+  
+  header>p.emoji{
+    font-size: 2.285rem;
+    margin: 0;
+    display: inline-block;
+    padding: 4px;
+    background-color: #323232;
+    border-radius: 12px;
+    width: 200px;
+  }
+
+  span.letter-chips {
+    height: 73px;
+    width: 73px;
+    font-size: 1.9rem;
+    
+  }
+  
+  
+  footer{
+    max-width: 800px;
+  }
+
+  footer>h1{
+    font-size: 2.1rem;
+  width: 100%;  
+  }
+  
+  section.keyboard {
+    gap: 10px;
+    max-width: 650px;
+  }
+  
+  section.keyboard > button {
+    height: 62px;
+    width: 56px;
+    font-size: 1.1rem;
+  }
+
+  button.play-again {
+    width: 275px;
+    height: 52px;
+    font-size: 1.1rem;
+  }
+
+  .hintbox p {
+    
+    font-size: 25px;
+   
+  }
+
+  .hintbox h3{
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+ 
+  header > h1, header>div.headerH1>h1 {
+    font-size: 3.7rem;
+    
+  }
+  
+ 
+  
+  header > p.header-desc {
+    font-size: 1.1rem;
+  }
+  
+  header>p.emoji{
+    font-size: 2.95rem;
+    margin: 0;
+    display: inline-block;
+    padding: 4px;
+    background-color: #323232;
+    border-radius: 12px;
+    width: 300px;
+  }
+
+  span.letter-chips {
+    height: 80px;
+    width: 80px;
+    
+    font-size: 2.35rem;
+    
+  }
+  
+  
+  footer{
+    max-width: 800px;
+  }
+  footer>h1{
+    font-size: 2.35rem;
+  width: 100%;  
+}
+  
+  section.keyboard {
+    
+    gap: 8px;
+    max-width: 650px;
+  }
+  
+  section.keyboard > button {
+    height: 68px;
+    width: 54px;
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+
+  button.play-again {
+   
+    width: 290px;
+    height: 55px;
+    font-size: 1.3rem;
+    
+  }
+
+
+  
+  .hintbox p {
+    
+    font-size: 18px;
+   
+  }
+
+  .hintbox h3{
+    font-size: 1.5rem;
+  }
+}
+
+
+/* ========== NAV ========== */
+nav {
+  background-color: none;
+}
+
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  transition: background-color 0.3s ease;
+}
+
+ul.notsidebar, ul.placeholder {
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+}
+
+ul.placeholder {
+  background-color: transparent;
+}
+
+ul.placeholder > li {
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+}
+
+nav ul li {
+  height: 50px;
+  padding-right: 2px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.notsidebar a:hover {
+  background-color: #f0f0f0;
+  transition: all 0.3s ease-in-out;
+}
+
+.notsidebar a:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+
+
+/* ========== HEADER ========== */
+.headerH1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+.headerH1 h1 {
+  margin: 0 auto;
+}
+
+/* ========== NAV WRAPPER ========== */
+div.nav-wrapper {
+  margin: 0;
+  position: absolute;
+  right: 0; /* Distance from the right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}
+
+/* ========== SIDEBAR ========== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 100px;
+  z-index: 999;
+  background-color: rgba(226, 226, 226, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.sidebar a:hover {
+  background-color: rgb(53, 53, 53);
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px 0 0 20px;
+}
+
+
+
+/* ========== ICONS ========== */
+
+
+/* ========== MENU BUTTON ========== */
+.menu-button {
+  display: none;
+}
+
+
+/* ========== placeholder  ========== */
+ 
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+.hintbox{
+  position: absolute;
+  top: -2px;
+  right: 0px;
+  width: 280px;
+  height: 130px;
+  background-color: #4b4453; /* dark gray for harmony */
+  color: #ffffff; /* white text */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+  z-index: 10000;
+}
+
+.hintbox h3 {
+  margin: 0;
+  margin-top: 0;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.hintbox span{
+  margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 20px;
+    font-size: 20px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.hintbox span:hover{
+  color: #FCBA29;
+  transition: all 0.3s ease-in-out;
+}
+
+.hintbox p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hint-close{
+  text-align: center;
+
+}
+@media (max-width: 300px) {
+  .hintbox{
+    width: 200px;
+    height: 220px;
+    font-size: 1.2rem;
+  }
+  
+}
+
+.hintbox {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none; 
+}
+
+.hintbox.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }

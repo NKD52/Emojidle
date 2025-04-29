@@ -1,79 +1,79 @@
 export const words3 = [
-    { word: "Fireman", emoji: ["🔥", "👨"] }, // Fire + Man
-    { word: "Sailing", emoji: ["⛵", "📞"] }, // Sail + Ing (Salt + Ring)
-    { word: "Teacher", emoji: ["🍵", "🔑", "👂"] }, // Tea + Key + Ear
-    { word: "Airport", emoji: ["💨", "🏗"] }, // Air + Port (Apple + Door)
-    { word: "Coconut", emoji: ["🫘", "🍫", "🥜"] }, // Cocoa + Nut
-    { word: "Pumpkin", emoji: ["✊", "👑"] }, // Pump + Kin
-    { word: "Snowman", emoji: ["❄️", "🧑🏻"] }, // Swim + Mer (Man)
-    { word: "Holiday", emoji: ["✝️", "📅"] }, // Ho + Light + Day
-    { word: "Factory", emoji: ["🏭"] }, // Fax + Torr + Y
-    { word: "Amazing", emoji: ["🅰️","₪", "🎤"] }, // A + Maze + Ing
-    { word: "Journey", emoji: ["📖 🦵🏻"] }, // Juice + Nose + Key
-    { word: "Pockets", emoji: ["👝 👝 ➕"] }, // Pock + Cents
-    { word: "Library", emoji: ["♎︎︎ 🍓"] }, // Lib + Rary (Read)
-    { word: "Picture", emoji: ["🖼️"] }, // Pic + Ture
-    { word: "Forever", emoji: ["4️⃣ ♾️"] }, // Four + Eve + R
-    { word: "Wintery", emoji: ["❄️", "💨"] }, // Win + Tear + Y
-    { word: "Society", emoji: ["🔌", "👀", "🍵"] }, // Socket + Eye + Tea
-    { word: "Imagine", emoji: ["🪞", "📥"] }, // I + Mag + In
-    { word: "Balance", emoji: ["⚖️"] }, // Bal + Ants
-    { word: "Mystery", emoji: ["💁🏻‍♀️", "🥲"] }, // Mist + Tea + Re
-    { word: "Reality", emoji: ["📺", "🍵"] }, // Re + Al + Key
-    { word: "Captain", emoji: ["🧢", "🔟"] }, // Cap + Ten
-    { word: "Sunrise", emoji: ["☀️", "📈"] }, // Sun + Rise
-    { word: "Diamond", emoji: ["💎"] }, // Die + Monday
-    { word: "Harvest", emoji: ["🌾", "🦺"] }, // Harp + Vest
-    { word: "Bicycle", emoji: ["🐝", "🔁"] }, // Bi + Cycle
-    { word: "Monster", emoji: ["🌙 ⭐"] }, // Mon + Stir
-    { word: "Paradox", emoji: ["👯⚓"] }, // Pair + A + Ducks
-    { word: "Silence", emoji: ["🤫"] }, // Silent + C
-    { word: "Victory", emoji: ["✌️", "🌲"] }, // V + Tree
-    { word: "Whisper", emoji: ["🌬️", "👂"] }, // Whis + Per
-    { word: "Miracle", emoji: ["🪞", "🔮"] }, // Mirror + A + Call
-    { word: "Tornado", emoji: ["🌪️"] }, // Torn + A + Door
-    { word: "Unicorn", emoji: ["1️⃣", "🌽"] }, // Uni + Corn
-    { word: "Volcano", emoji: ["🏐", "🗑️", "𝐎"] }, // Violin + Nose + No
-    { word: "Quantum", emoji: ["♕ 🐜 ⚖️"] }, // Quan + Tum
-    { word: "Chasing", emoji: ["🏃", "🗣️", "🎤"] }, // Chase + Sing
-    { word: "Survive", emoji: ["🏄 🙏🏻"] }, // Surf + Five
-    { word: "Tropics", emoji: ["🌴", "📸"] }, // Trop + Pics
-    { word: "Sunbeam", emoji: ["☀️", "💡"] }, // Sun + Beam
-    { word: "Fighter", emoji: ["🤼"] }, // Fight + Er
-    { word: "Catcher", emoji: ["🥎", "🖐","👮"] }, // Catch + Er
-    { word: "Wishing", emoji: ["🌠", "💭"] }, // Wish + Ing
-    { word: "Lending", emoji: ["🫳","🖋️","🫴", "💵"] }, // Lend + Ing
-    { word: "Rainbow", emoji: ["🌧️", "🎀"] }, // Rain + Bow
-    { word: "Popcorn", emoji: ["🍾", "🌽"] }, // Pop + Corn
-    {word: "Fantasy", emoji:["🪭 🌊"]},
-    { word: "Explore", emoji: ["❌ 🌧️"] },
-    { word: "Gravity", emoji: ["🍇 🎉"] },
-    { word: "Serpent", emoji: ["🔎 ⬟"] },
-    { word: "Twinkle", emoji: ["👯 ✨"] },
-    { word: "Vibrant", emoji: ["📳 🦆"] },
-    { word: "Pioneer", emoji: ["🥧 𝐎 🦌"] },
-    { word: "Eclipse", emoji: ["🌒"] },
-    { word: "Shelter", emoji: ["🐚 🥲"] },
-    { word: "Thunder", emoji: ["🌩️"] },
-    { word: "Liberty", emoji: ["🗽"] },
-    { word: "Breathe", emoji: ["🌬️ 🤧"] },
-    { word: "Harmony", emoji: ["🪗 💵"] },
-    { word: "Crimson", emoji: ["😭 ☀️"] },
-    { word: "Phoenix", emoji: ["🐦‍🔥"] },
-    { word: "Cascade", emoji: ["💼 A+"] },
-    { word: "Tempest", emoji: ["🏯  𝓬𝓉𝓻𝓁➕𝐕"] },
-    { word: "Pandora", emoji: ["🍳 🚪"] },
-    { word: "Warlock", emoji: ["♨️ 🔒"] },
-    { word: "Venture", emoji: ["🚌 🪑"] },
-    { word: "Warrior", emoji: ["⚠️ 🪞"] },
-    { word: "Panther", emoji: ["🍳 🌡️"] },
-    { word: "Radiant", emoji: ["📻 🐜"] },
-    { word: "Scepter", emoji: ["✅ 🥲"] },
-    { word: "Scorpio", emoji: ["♏"] },
-    { word: "Triumph", emoji: ["🌳 🐪"] },
-    { word: "Vintage", emoji: ["🍷 🏷️"] },
-    { word: "Windsor", emoji: ["༄ 🔎"] },
-    { word: "Octopus", emoji: ["🐙"] },
-    { word: "Brewing", emoji: ["🥖 🪽"] },
-    { word: "Charger", emoji: ["🔌 🔋"] }
+    { word: "Fireman", emoji: ["🔥", "👨"], hint: ["You really need a hint on this one?"] },
+    { word: "Sailing", emoji: ["⛵", "📞"], hint: ["You can do it, I believe in you!"] },
+    { word: "Teacher", emoji: ["🍵", "🔑", "👂"], hint: ["Break it down in two words"] },
+    { word: "Airport", emoji: ["💨", "🏗"], hint: ["First half: Air"] },
+    { word: "Coconut", emoji: ["🫘", "🍫", "🥜"], hint: ["No hints left!"] },
+    { word: "Pumpkin", emoji: ["✊", "👑"], hint: ["First half: pump"] },
+    { word: "Snowman", emoji: ["❄️", "🧑🏻"], hint: ["-_-"] },
+    { word: "Holiday", emoji: ["✝️", "📅"], hint: ["Second half: Day "] },
+    { word: "Factory", emoji: ["🏭"], hint: ["Place where you make stuff in bulk"] },
+    { word: "Amazing", emoji: ["🅰️", "₪", "🎤"], hint: ["First half: Amaz-"] },
+    { word: "Journey", emoji: ["📖 🦵🏻"], hint: ["Its not the - but friends we make along the way"] },
+    { word: "Pockets", emoji: ["👝 👝 ➕"], hint: ["Storage for jeans"] },
+    { word: "Library", emoji: ["♎︎︎ 🍓"], hint: ["First half: zodiac sign"] },
+    { word: "Picture", emoji: ["🖼️"], "hint": ["Say cheese!"] },
+    { word: "Forever", emoji: ["4️⃣", "♾️"], "hint": ["Never-ending... like your group chat notifications"] },
+    { word: "Wintery", emoji: ["❄️", "💨"], "hint": ["That chilly vibe"] },
+    { word: "Society", emoji: ["🔌", "👀", "🍵"], "hint": ["A plug, some eyes, and a cuppa? Sounds social."] },
+    { word: "Imagine", emoji: ["🪞", "📥"], "hint": ["Think... dreamy... abstract..."] },
+    { word: "Balance", emoji: ["⚖️"], "hint": ["Justice isn't the only thing needing it"] },
+    { word: "Mystery", emoji: ["💁🏻‍♀️", "🥲"], "hint": ["You won't solve this unless you embrace the unknown"] },
+    { word: "Reality", emoji: ["📺", "🍵"], "hint": ["Opposite of fantasy"] },
+    { word: "Captain", emoji: ["🧢", "🔟"], "hint": ["Hat + a number = a leader?"] },
+    { word: "Sunrise", emoji: ["☀️", "📈"], "hint": ["It happens daily, but are you ever awake for it?"] },
+    { word: "Diamond", emoji: ["💎"], "hint": ["Sorry!"] },
+    { word: "Harvest", emoji: ["🌾", "🦺"], "hint": ["Time to reap what you sow"] },
+    { word: "Bicycle", emoji: ["🐝", "🔁"], "hint": ["Two wheels and a bell"] },
+    { word: "Monster", emoji: ["🌙", "⭐"], "hint": ["MoonStar?"] },
+    { word: "Paradox", emoji: ["👯", "⚓"], "hint": ["First half: par (pair)"] },
+    { word: "Silence", emoji: ["🤫"], "hint": ["Shhh"] },
+    { word: "Victory", emoji: ["✌️", "🌲"], "hint": ["Rhymes with 'glory'"] },
+    { word: "Whisper", emoji: ["🌬️", "👂"], "hint": ["Something you do quietly... get it?"] },
+    { word: "Miracle", emoji: ["🪞", "🔮"], hint: ["First half: mira."] },
+    { word: "Tornado", emoji: ["🌪️"], hint: ["Everything's spinning out of control."] },
+    { word: "Unicorn", emoji: ["1️⃣", "🌽"], hint: ["It's rare, magical, and impossible to miss."] },
+    { word: "Volcano", emoji: ["🏐", "🗑️", "𝐎"], hint: ["First half: Vol"] },
+    { word: "Quantum", emoji: ["♕ 🐜 🫃🏻"], hint: ["First hallf: Queen + ant = Quant?"] },
+    { word: "Chasing", emoji: ["🏃", "🗣️", "🎤"], hint: ["Gotta run, gotta yell, gotta sing!"] },
+    { word: "Survive", emoji: ["🏄 🙏🏻"], hint: ["It’s not the destination, it’s the journey... and making it out alive."] },
+    { word: "Tropics", emoji: ["🌴", "📸"], hint: ["Think palm trees, and a perfect Instagram shot."] },
+    { word: "Sunbeam", emoji: ["☀️", "💡"], hint: ["This is too easy...Solve it on your own!"] },
+    { word: "Fighter", emoji: ["🤼"], hint: ["Only the strong survive... and the determined fight."] },
+    { word: "Catcher", emoji: ["🥎", "🖐", "👮"], hint: ["Catch me if you can..or can you?"] },
+    { word: "Wishing", emoji: ["🌠", "💭"], hint: ["First half: wish"] },
+    { word: "Lending", emoji: ["🫳", "🖋️", "🫴", "💵"], hint: ["Give a little, get a little back... eventually."] },
+    { word: "Rainbow", emoji: ["🌧️", "🎀"], hint: ["There’s always beauty after the storm."] },
+    { word: "Popcorn", emoji: ["🍾", "🌽"], hint: ["Pop it, don’t stop it."] },
+    { word: "Fantasy", emoji: ["🪭 🌊"], hint: ["Opposite of reality"] },
+    { word: "Explore", emoji: ["❌ 🌧️"], hint: ["First half: ex"] },
+    { word: "Gravity", emoji: ["🍇 🎉"], hint: ["It’s what keeps everything grounded, and sometimes, it makes things fall."] },
+    { word: "Serpent", emoji: ["🔎 ⬟"], hint: ["Second half: pent."] },
+    { word: "Twinkle", emoji: ["👯 ✨"], hint: ["It’s the sparkle in your eyes when you see something magical."] },
+    { word: "Vibrant", emoji: ["📳 🦆"], hint: ["Full of life and color, sometimes a bit loud."] },
+    { word: "Pioneer", emoji: ["🥧 𝐎 🦌"], hint: ["Breaking new ground, one step at a time."] },
+    { word: "Eclipse", emoji: ["🌒"], hint: ["When day and night have a brief meeting."] },
+    { word: "Shelter", emoji: ["🐚 🥲"], hint: ["A safe place, no matter the storm outside."] },
+    { word: "Thunder", emoji: ["🌩️"], hint: ["Loud, powerful, and shaking the sky."] },
+    { word: "Liberty", emoji: ["🗽"], hint: ["Freedom, independence, and the right to stand tall."] },
+    { word: "Breathe", emoji: ["🌬️ 🤧"], hint: ["Inhale... exhale..."] },
+    { word: "Harmony", emoji: ["🪗 💵"], hint: ["First half: Harmo-"] },
+    { word: "Crimson", emoji: ["😭 ☀️"], hint: ["First half: Cri-"] },
+    { word: "Phoenix", emoji: ["🐦‍🔥"], hint: ["Rising from the ashes, always making a comeback."] },
+    { word: "Cascade", emoji: ["💼 A+"], hint: ["Second half: -ade"] },
+    { word: "Tempest", emoji: ["🏯 𝓬𝓉𝓻𝓁➕𝐕"], hint: ["A storm, with all the forces of nature combined."] },
+    { word: "Pandora", emoji: ["🍳 🚪"], hint: ["Dora the explorer"] },
+    { word: "Warlock", emoji: ["♨️ 🔒"], hint: ["First half: war-"] },
+    { word: "Venture", emoji: ["🚌 🪑"], hint: ["A journey, sometimes with a few bumps along the way."] },
+    { word: "Warrior", emoji: ["⚠️ 🪞"], hint: ["First half: war-"] },
+    { word: "Panther", emoji: ["🍳 🌡️"], hint: ["A sleek, silent hunter with a hot temper."] },
+    { word: "Radiant", emoji: ["📻 🐜"], hint: ["Shining bright like a beacon, or maybe an old-school radio."] },
+    { word: "Scepter", emoji: ["✅ 🥲"], hint: ["A symbol of power, with a twist of responsibility."] },
+    { word: "Scorpio", emoji: ["♏"], hint: ["A sign that stings but is fiercely loyal."] },
+    { word: "Triumph", emoji: ["🌳 🐪"], hint: ["It’s the victory after the struggle, the climb to the top."] },
+    { word: "Vintage", emoji: ["🍷 🏷️"], hint: ["Something old, classic, and timeless."] },
+    { word: "Windsor", emoji: ["༄ 🔎"], hint: ["Royalty, mystery, and secrets waiting to be uncovered."] },
+    { word: "Octopus", emoji: ["🐙"], hint: ["A creature with eight arms and a mind of its own."] },
+    { word: "Brewing", emoji: ["🥖 🪽"], hint: ["Mixing the right ingredients for something amazing to come."] },
+    { word: "Charger", emoji: ["🔌 🔋"], hint: ["Sometimes, you just need a little extra juice."] }
 ];

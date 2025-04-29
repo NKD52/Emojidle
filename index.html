@@ -1,32 +1,55 @@
 <html>
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4X6FT2D6KL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X6FT2D6KL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4X6FT2D6KL');
+  </script>
 
-  gtag('config', 'G-4X6FT2D6KL');
-</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/index.css">
+  <link rel="icon" type="image/png" href="/favicon3.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/src/index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Play Emojidle — the exciting emoji guessing game! Solve the word puzzle in 5 tries using emoji clues. A fresh challenge every day!">
+  <meta property="og:title" content="Play Emojidle - Emoji Word Puzzle Game">
+  <meta property="og:description" content="Guess the word in 5 tries using emoji hints. Fun, challenging, and new puzzles every day! Play now.">
+  <meta property="og:image" content="https://nkd52.github.io/Emojidle/favicon3.png" />
+  <meta property="og:url" content="https://nkd52.github.io/Emojidle/" />
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en-US">
+  <meta name="theme-color" content="#000000">
 
-<link rel="icon" type="image/png" href="/favicon3.png">
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Emojidle --- The Emoji Game</title>
-
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <title>Play Emojidle — Emoji Word Puzzle Game</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Game",
+      "name": "Emojidle",
+      "url": "https://nkd52.github.io/Emojidle/",
+      "description": "Play Emojidle — a fun emoji word guessing game! Guess the hidden word in 5 tries using emoji clues.",
+      "inLanguage": "en-US",
+      "applicationCategory": "Game",
+      "operatingSystem": "All",
+      "author": {
+        "@type": "Person",
+        "name": "nkd52"
+      },
+      "image": "https://nkd52.github.io/Emojidle/favicon3.png"
+    }
+    </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
