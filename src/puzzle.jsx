@@ -50,7 +50,7 @@ const puzzle = {
 
     setDailyWordDate() {
         const currentDate = new Date().toISOString().split('T')[0];
-        localStorage.setItem("dailyWordDate", JSON.stringify(currentDate));
+        localStorage.setItem("dailyWordDate", currentDate);
     },
 
     setDailyWordBooleanTrue() {
